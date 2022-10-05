@@ -1,0 +1,66 @@
+body {
+  background-color: black;
+  background-image: url("../assets/background4.jpg");
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1,
+h6 {
+  color: yellow;
+}
+
+h2,
+h4,
+h5,
+p {
+  color: white;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+.card {
+  background-color: rgba(45, 45, 50, 0.9);
+  border-radius: 10px;
+  border: none;
+  height: 100%;
+}
+
+label {
+  color: white;
+}
+
+table {
+  color: white;
+}
+
+th {
+  border: 2px solid yellow;
+}
+td {
+  border: 1px solid green;
+}
+
+.btn-link {
+  border: 1px solid yellow;
+  text-decoration: none;
+  color: yellow;
+}
+
+.btn-link:hover {
+  border: 1px solid white;
+  background-color: rgba(255, 251, 0, 0.5);
+  color: white;
+}
+
+.modal-content {
+  border: 1px solid yellow;
+  background-color: black;
+}

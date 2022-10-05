@@ -1,0 +1,22 @@
+<!--ADMIN SITE-->
+<%- include('partials/header') %>
+
+<div class="row">
+  <div class="col-4"></div>
+  <div class="col-4">
+    <form action="admin" method="POST">
+      <div class="mb-3"
+        <label for="userName" class="form-label">Username</label>
+        <input type="text" class="form-control" name="userName" value="James">
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" name="password" value="EA51VDA">
+      </div>
+      <button type="submit" class="btn btn-success">Login</button>
+    </form>
+  </div>
+  <div class="col-4"></div>
+</div>
+
+<%- include('partials/footer') %>

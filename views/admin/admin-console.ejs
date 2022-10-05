@@ -1,0 +1,45 @@
+<!--ADMIN SITE-->
+<%- include('partials/header') %>
+
+<h1>ARC Admin Console</h1>
+
+<div class="row mb-4">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h4>Webinars</h4>
+      </div>
+      <div class="card-body">
+        <button>Create</button>
+        <button>Update</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h4>eBook</h4>
+      </div>
+      <div class="card-body">
+        <a href="/admin/ebook" class="btn btn-info">View</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h4>Services</h4>
+      </div>
+      <div class="card-body">
+          <a href="/admin/services-create" class="btn btn-info">Create</a>
+        <a href="/admin/services-edit" class="btn btn-info">Edit</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-6"></div>
+</div>
+
+<%- include('partials/footer') %>

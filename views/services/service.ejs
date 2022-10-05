@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+
+<div class="card">
+<div class="card-header"> 
+    <h1><%= service.title %></h1>
+  </div>
+  <div class="card-body">  
+    <p><%= service.subTitle %></p>
+    <p><%= service.content %></p>
+    <% service.subContent.forEach(sub => { %>
+        <div class="mb-3">
+          <button class="btn btn-link"><%= sub.title %></button>
+        </div>
+    <% }) %>
+  </div>
+  <div class="card-footer">
+    <a href="/services" class="btn btn-link">Back...</a>
+  </div>
+</div> 
+
+
+<%- include('../partials/footer') %>

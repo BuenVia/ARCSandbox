@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<h1>Create New Service</h1>
+
+<form action="/admin/services-create" method="POST">
+  <div>
+    <label for="" class="form-label">Title</label>
+    <input type="text" class="form-control" name="title">
+  </div>
+  <div>
+      <label for="" class="form-label">Sub-Title</label>
+      <input type="text" class="form-control" name="subTitle">
+    </div>
+    <div>
+        <label for="" class="form-label">Content</label>
+        <textarea class="form-control" name="content"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<%- include('partials/footer') %>

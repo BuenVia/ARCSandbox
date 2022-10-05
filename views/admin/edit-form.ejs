@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+
+<form action="/admin/services-update" method="POST">
+  <div>
+      <input type="hidden" class="form-control" name="id" value="<%= service._id %>">
+    </div>
+  <div>
+    <label for="" class="form-label">Title</label>
+    <input type="text" class="form-control" name="title" value="<%= service.title %>">
+  </div>
+  <div>
+      <label for="" class="form-label">Sub-Title</label>
+      <input type="text" class="form-control" name="subTitle" value="<%= service.subTitle %>"">
+    </div>
+    <div>
+        <label for="" class="form-label">Content</label>
+        <textarea class="form-control" name="content"><%= service.content %></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<form action="/admin/services-delete" method="POST">
+  <div class="mt-5">
+      <input type="hidden" class="form-control" name="id" value="<%= service._id %>">
+  </div>
+  <button class="btn btn-danger">DELETE</button>
+</form>
+
+<%- include('partials/footer') %>

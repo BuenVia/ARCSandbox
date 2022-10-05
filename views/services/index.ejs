@@ -1,0 +1,16 @@
+<%- include('../partials/header') %>
+
+<h1 class="title">ARC Support Services</h1>
+<h3>Please click on a service to find out more</h3>
+
+<% vda.forEach(v => { %>
+  <div class="mb-3">
+      <a href="services/<%= v.title %>" class="btn btn-link"><%= v.title %></a>
+    </div>
+<% }) %>
+
+
+<div id="vdaEl"></div>
+
+<script src="../../js/vda.js" defer></script>
+<%- include('../partials/footer') %>

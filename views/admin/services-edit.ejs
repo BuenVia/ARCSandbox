@@ -1,0 +1,9 @@
+<%- include('partials/header') %>
+
+<% services.forEach(service => { %>
+  <div class="card">
+    <a href="/admin/services/<%= service._id %>" class="btn btn-link"><%= service.title %></a>
+  </div>
+<% }) %>
+
+<%- include('partials/footer') %>

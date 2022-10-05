@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<h1>Downloads</h1>
+
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Date</th>
+    </tr>
+    <% downloads.forEach(dl => { %>
+    <tr>
+        <td><%= dl.name %></td>
+        <td><%= dl.email %></td>
+        <td><%= dl.date %></td>
+    </tr>
+<% }) %>
+</table>
+
+
+<%- include('partials/footer') %>
